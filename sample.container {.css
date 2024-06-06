@@ -1,0 +1,15 @@
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    width: 50%; /* Adjust the width of the container as needed */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
