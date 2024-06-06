@@ -75,867 +75,287 @@
     <h1>Elysse's Tutoring Forms</h1>
 
     <p>
-					<div style="overflow-x:auto;">
-    <table class="table">
-        <tr>
-            <th colspan="9">Week 1</th>
-          </tr>
-        <tr>
-          <th>Program</th>
-          <th>Tutor Name</th>
-          <th>Date</th>
-          <th>Typical Day</th>
-          <th>Task</th>
-          <th>Site</th>
-          <th>Time Start</th>
-          <th>Time End</th>
-          <th>Notes</th>
-        </tr>
-        <tr>
-          <td>
-             <select name="programs" id="programs">
-                <option value="franklin.mckinley">Franklin-Mckinley</option>
-                <option value="san.mateo">San Mateo</option>
-                <option value="palo.alto">Palo Alto</option>
-                <option value="fremont">Fremont</option>
-             </select>
-          </td>
-          <td>
-                <select name="tutors" id="tutors">
-                    <option value="Elysse">Elysse</option>
-                    <option value="Ava">Ava</option>
-                    <option value="Sophia">Sophia</option>
-                    <option value="Isabella">Isabella</option>
-                </select>
-          </td>
-          <td>
-                <input type="date" id="task date" name="task date">
-          </td>
-          <td>
-            <input type="checkbox" id="yes" name="yes" value=1>
-            <label for="yes"> yes</label> </br>
-            <input type="checkbox" id="no" name="no" value=0>
-            <label for="no"> no</label>
-          </td>
-          <td>
-                <select name="programs" id="programs">
-                    <option value="tutoring">Tutoring</option>
-                    <option value="training">Training</option>
-                    <option value="meeting">Meeting</option>
-                    <option value="class.observation">Class Observation</option>
-                </select>
-          </td>
-          <td>
-            <select name="sites" id="sites">
-                <option value="Meadows">Meadows</option>
-                <option value="Stonegate">Stonegate</option>
-                <option value="Santee">Santee</option>
-                <option value="Ramblewood">Ramblewood</option>
-            </select>
-          </td>
-          <td>
-            <input type="time" id="timestart" name="timestart">
-          </td>
-          <td>
-            <input type="time" id="timeend" name="timeend">
-          </td>
-          <td>
-            <input type="text" id="tutornotes" name="tutornotes"><br>
-          </td>
-        </tr>
-        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>
-        <tr>
-          <td>
-            <button type="button" form="my_form">submit</button>
-            </td>
-        </tr>
-			</table>
+	<div style="overflow-x:auto;">
+	    <table class="table">
+	        <tr>
+	            <th colspan="9">Week 1</th>
+	          </tr>
+	        <tr>
+	          <th>Program</th>
+	          <th>Tutor Name</th>
+	          <th>Date</th>
+	          <th>Typical Day</th>
+	          <th>Task</th>
+	          <th>Site</th>
+	          <th>Time Start</th>
+	          <th>Time End</th>
+	          <th>Notes</th>
+	        </tr>
+	        <tr>
+	          <td>
+	             <select name="programs" id="programs">
+	                <option value="franklin.mckinley">Franklin-Mckinley</option>
+	                <option value="san.mateo">San Mateo</option>
+	                <option value="palo.alto">Palo Alto</option>
+	                <option value="fremont">Fremont</option>
+	             </select>
+	          </td>
+	          <td>
+	                <select name="tutors" id="tutors">
+	                    <option value="Elysse">Elysse</option>
+	                    <option value="Ava">Ava</option>
+	                    <option value="Sophia">Sophia</option>
+	                    <option value="Isabella">Isabella</option>
+	                </select>
+	          </td>
+	          <td>
+	                <input type="date" id="task date" name="task date">
+	          </td>
+	          <td>
+	            <input type="checkbox" id="yes" name="yes" value=1>
+	            <label for="yes"> yes</label> </br>
+	            <input type="checkbox" id="no" name="no" value=0>
+	            <label for="no"> no</label>
+	          </td>
+	          <td>
+	                <select name="programs" id="programs">
+	                    <option value="tutoring">Tutoring</option>
+	                    <option value="training">Training</option>
+	                    <option value="meeting">Meeting</option>
+	                    <option value="class.observation">Class Observation</option>
+	                </select>
+	          </td>
+	          <td>
+	            <select name="sites" id="sites">
+	                <option value="Meadows">Meadows</option>
+	                <option value="Stonegate">Stonegate</option>
+	                <option value="Santee">Santee</option>
+	                <option value="Ramblewood">Ramblewood</option>
+	            </select>
+	          </td>
+	          <td>
+	            <input type="time" id="timestart" name="timestart">
+	          </td>
+	          <td>
+	            <input type="time" id="timeend" name="timeend">
+	          </td>
+	          <td>
+	            <input type="text" id="tutornotes" name="tutornotes"><br>
+	          </td>
+	        </tr>
+	        <tr>
+	            <td>
+	               <select name="programs" id="programs">
+	                  <option value="franklin.mckinley">Franklin-Mckinley</option>
+	                  <option value="san.mateo">San Mateo</option>
+	                  <option value="palo.alto">Palo Alto</option>
+	                  <option value="fremont">Fremont</option>
+	               </select>
+	            </td>
+	            <td>
+	                  <select name="tutors" id="tutors">
+	                      <option value="Elysse">Elysse</option>
+	                      <option value="Ava">Ava</option>
+	                      <option value="Sophia">Sophia</option>
+	                      <option value="Isabella">Isabella</option>
+	                  </select>
+	            </td>
+	            <td>
+	                  <input type="date" id="task date" name="task date">
+	            </td>
+	            <td>
+	              <input type="checkbox" id="yes" name="yes" value=1>
+	              <label for="yes"> yes</label> </br>
+	              <input type="checkbox" id="no" name="no" value=0>
+	              <label for="no"> no</label>
+	            </td>
+	            <td>
+	                  <select name="programs" id="programs">
+	                      <option value="tutoring">Tutoring</option>
+	                      <option value="training">Training</option>
+	                      <option value="meeting">Meeting</option>
+	                      <option value="class.observation">Class Observation</option>
+	                  </select>
+	            </td>
+	            <td>
+	              <select name="sites" id="sites">
+	                  <option value="Meadows">Meadows</option>
+	                  <option value="Stonegate">Stonegate</option>
+	                  <option value="Santee">Santee</option>
+	                  <option value="Ramblewood">Ramblewood</option>
+	              </select>
+	            </td>
+	            <td>
+	              <input type="time" id="timestart" name="timestart">
+	            </td>
+	            <td>
+	              <input type="time" id="timeend" name="timeend">
+	            </td>
+	            <td>
+	              <input type="text" id="tutornotes" name="tutornotes"><br>
+	            </td>
+	          </tr>        <tr>
+	            <td>
+	               <select name="programs" id="programs">
+	                  <option value="franklin.mckinley">Franklin-Mckinley</option>
+	                  <option value="san.mateo">San Mateo</option>
+	                  <option value="palo.alto">Palo Alto</option>
+	                  <option value="fremont">Fremont</option>
+	               </select>
+	            </td>
+	            <td>
+	                  <select name="tutors" id="tutors">
+	                      <option value="Elysse">Elysse</option>
+	                      <option value="Ava">Ava</option>
+	                      <option value="Sophia">Sophia</option>
+	                      <option value="Isabella">Isabella</option>
+	                  </select>
+	            </td>
+	            <td>
+	                  <input type="date" id="task date" name="task date">
+	            </td>
+	            <td>
+	              <input type="checkbox" id="yes" name="yes" value=1>
+	              <label for="yes"> yes</label> </br>
+	              <input type="checkbox" id="no" name="no" value=0>
+	              <label for="no"> no</label>
+	            </td>
+	            <td>
+	                  <select name="programs" id="programs">
+	                      <option value="tutoring">Tutoring</option>
+	                      <option value="training">Training</option>
+	                      <option value="meeting">Meeting</option>
+	                      <option value="class.observation">Class Observation</option>
+	                  </select>
+	            </td>
+	            <td>
+	              <select name="sites" id="sites">
+	                  <option value="Meadows">Meadows</option>
+	                  <option value="Stonegate">Stonegate</option>
+	                  <option value="Santee">Santee</option>
+	                  <option value="Ramblewood">Ramblewood</option>
+	              </select>
+	            </td>
+	            <td>
+	              <input type="time" id="timestart" name="timestart">
+	            </td>
+	            <td>
+	              <input type="time" id="timeend" name="timeend">
+	            </td>
+	            <td>
+	              <input type="text" id="tutornotes" name="tutornotes"><br>
+	            </td>
+	          </tr>        <tr>
+	            <td>
+	               <select name="programs" id="programs">
+	                  <option value="franklin.mckinley">Franklin-Mckinley</option>
+	                  <option value="san.mateo">San Mateo</option>
+	                  <option value="palo.alto">Palo Alto</option>
+	                  <option value="fremont">Fremont</option>
+	               </select>
+	            </td>
+	            <td>
+	                  <select name="tutors" id="tutors">
+	                      <option value="Elysse">Elysse</option>
+	                      <option value="Ava">Ava</option>
+	                      <option value="Sophia">Sophia</option>
+	                      <option value="Isabella">Isabella</option>
+	                  </select>
+	            </td>
+	            <td>
+	                  <input type="date" id="task date" name="task date">
+	            </td>
+	            <td>
+	              <input type="checkbox" id="yes" name="yes" value=1>
+	              <label for="yes"> yes</label> </br>
+	              <input type="checkbox" id="no" name="no" value=0>
+	              <label for="no"> no</label>
+	            </td>
+	            <td>
+	                  <select name="programs" id="programs">
+	                      <option value="tutoring">Tutoring</option>
+	                      <option value="training">Training</option>
+	                      <option value="meeting">Meeting</option>
+	                      <option value="class.observation">Class Observation</option>
+	                  </select>
+	            </td>
+	            <td>
+	              <select name="sites" id="sites">
+	                  <option value="Meadows">Meadows</option>
+	                  <option value="Stonegate">Stonegate</option>
+	                  <option value="Santee">Santee</option>
+	                  <option value="Ramblewood">Ramblewood</option>
+	              </select>
+	            </td>
+	            <td>
+	              <input type="time" id="timestart" name="timestart">
+	            </td>
+	            <td>
+	              <input type="time" id="timeend" name="timeend">
+	            </td>
+	            <td>
+	              <input type="text" id="tutornotes" name="tutornotes"><br>
+	            </td>
+	          </tr>        <tr>
+	            <td>
+	               <select name="programs" id="programs">
+	                  <option value="franklin.mckinley">Franklin-Mckinley</option>
+	                  <option value="san.mateo">San Mateo</option>
+	                  <option value="palo.alto">Palo Alto</option>
+	                  <option value="fremont">Fremont</option>
+	               </select>
+	            </td>
+	            <td>
+	                  <select name="tutors" id="tutors">
+	                      <option value="Elysse">Elysse</option>
+	                      <option value="Ava">Ava</option>
+	                      <option value="Sophia">Sophia</option>
+	                      <option value="Isabella">Isabella</option>
+	                  </select>
+	            </td>
+	            <td>
+	                  <input type="date" id="task date" name="task date">
+	            </td>
+	            <td>
+	              <input type="checkbox" id="yes" name="yes" value=1>
+	              <label for="yes"> yes</label> </br>
+	              <input type="checkbox" id="no" name="no" value=0>
+	              <label for="no"> no</label>
+	            </td>
+	            <td>
+	                  <select name="programs" id="programs">
+	                      <option value="tutoring">Tutoring</option>
+	                      <option value="training">Training</option>
+	                      <option value="meeting">Meeting</option>
+	                      <option value="class.observation">Class Observation</option>
+	                  </select>
+	            </td>
+	            <td>
+	              <select name="sites" id="sites">
+	                  <option value="Meadows">Meadows</option>
+	                  <option value="Stonegate">Stonegate</option>
+	                  <option value="Santee">Santee</option>
+	                  <option value="Ramblewood">Ramblewood</option>
+	              </select>
+	            </td>
+	            <td>
+	              <input type="time" id="timestart" name="timestart">
+	            </td>
+	            <td>
+	              <input type="time" id="timeend" name="timeend">
+	            </td>
+	            <td>
+	              <input type="text" id="tutornotes" name="tutornotes"><br>
+	            </td>
+	          </tr>
+	        <tr>
+	          <td>
+	            <button type="button" form="my_form">submit</button>
+	            </td>
+	        </tr>
+		</table>
 	</div>
     </p>
 
-
-
-
-
-
-
-
-    <p>
-				<div>
-    <table class="table"> 
-        <tr>
-            <th colspan="9">Week 2</th>
-          </tr>
-        <tr>
-          <th>Program</th>
-          <th>Tutor Name</th>
-          <th>Date</th>
-          <th>Typical Day</th>
-          <th>Task</th>
-          <th>Site</th>
-          <th>Time Start</th>
-          <th>Time End</th>
-          <th>Notes</th>
-        </tr>
-        <tr>
-          <td>
-             <select name="programs" id="programs">
-                <option value="franklin.mckinley">Franklin-Mckinley</option>
-                <option value="san.mateo">San Mateo</option>
-                <option value="palo.alto">Palo Alto</option>
-                <option value="fremont">Fremont</option>
-             </select>
-          </td>
-          <td>
-                <select name="tutors" id="tutors">
-                    <option value="Elysse">Elysse</option>
-                    <option value="Ava">Ava</option>
-                    <option value="Sophia">Sophia</option>
-                    <option value="Isabella">Isabella</option>
-                </select>
-          </td>
-          <td>
-                <input type="date" id="task date" name="task date">
-          </td>
-          <td>
-            <input type="checkbox" id="yes" name="yes" value=1>
-            <label for="yes"> yes</label> </br>
-            <input type="checkbox" id="no" name="no" value=0>
-            <label for="no"> no</label>
-          </td>
-          <td>
-                <select name="programs" id="programs">
-                    <option value="tutoring">Tutoring</option>
-                    <option value="training">Training</option>
-                    <option value="meeting">Meeting</option>
-                    <option value="class.observation">Class Observation</option>
-                </select>
-          </td>
-          <td>
-            <select name="sites" id="sites">
-                <option value="Meadows">Meadows</option>
-                <option value="Stonegate">Stonegate</option>
-                <option value="Santee">Santee</option>
-                <option value="Ramblewood">Ramblewood</option>
-            </select>
-          </td>
-          <td>
-            <input type="time" id="timestart" name="timestart">
-          </td>
-          <td>
-            <input type="time" id="timeend" name="timeend">
-          </td>
-          <td>
-            <input type="text" id="tutornotes" name="tutornotes"><br>
-          </td>
-        </tr>
-        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>        <tr>
-            <td>
-               <select name="programs" id="programs">
-                  <option value="franklin.mckinley">Franklin-Mckinley</option>
-                  <option value="san.mateo">San Mateo</option>
-                  <option value="palo.alto">Palo Alto</option>
-                  <option value="fremont">Fremont</option>
-               </select>
-            </td>
-            <td>
-                  <select name="tutors" id="tutors">
-                      <option value="Elysse">Elysse</option>
-                      <option value="Ava">Ava</option>
-                      <option value="Sophia">Sophia</option>
-                      <option value="Isabella">Isabella</option>
-                  </select>
-            </td>
-            <td>
-                  <input type="date" id="task date" name="task date">
-            </td>
-            <td>
-              <input type="checkbox" id="yes" name="yes" value=1>
-              <label for="yes"> yes</label> </br>
-              <input type="checkbox" id="no" name="no" value=0>
-              <label for="no"> no</label>
-            </td>
-            <td>
-                  <select name="programs" id="programs">
-                      <option value="tutoring">Tutoring</option>
-                      <option value="training">Training</option>
-                      <option value="meeting">Meeting</option>
-                      <option value="class.observation">Class Observation</option>
-                  </select>
-            </td>
-            <td>
-              <select name="sites" id="sites">
-                  <option value="Meadows">Meadows</option>
-                  <option value="Stonegate">Stonegate</option>
-                  <option value="Santee">Santee</option>
-                  <option value="Ramblewood">Ramblewood</option>
-              </select>
-            </td>
-            <td>
-              <input type="time" id="timestart" name="timestart">
-            </td>
-            <td>
-              <input type="time" id="timeend" name="timeend">
-            </td>
-            <td>
-              <input type="text" id="tutornotes" name="tutornotes"><br>
-            </td>
-          </tr>
-        <tr>
-          <td>
-            <button type="button" form="my_form">submit</button>
-            </td>
-        </tr>
-					</table>
-					</div>
-    </p>     
-  
-
-
-
-
-
-
-    
-
-    <p>
-				<div>
-        <table class="table"> 
-            <tr>
-                <th colspan="9">Week 2</th>
-              </tr>
-            <tr>
-              <th>Program</th>
-              <th>Tutor Name</th>
-              <th>Date</th>
-              <th>Typical Day</th>
-              <th>Task</th>
-              <th>Site</th>
-              <th>Time Start</th>
-              <th>Time End</th>
-              <th>Notes</th>
-            </tr>
-            <tr>
-              <td>
-                 <select name="programs" id="programs">
-                    <option value="franklin.mckinley">Franklin-Mckinley</option>
-                    <option value="san.mateo">San Mateo</option>
-                    <option value="palo.alto">Palo Alto</option>
-                    <option value="fremont">Fremont</option>
-                 </select>
-              </td>
-              <td>
-                    <select name="tutors" id="tutors">
-                        <option value="Elysse">Elysse</option>
-                        <option value="Ava">Ava</option>
-                        <option value="Sophia">Sophia</option>
-                        <option value="Isabella">Isabella</option>
-                    </select>
-              </td>
-              <td>
-                    <input type="date" id="task date" name="task date">
-              </td>
-              <td>
-                <input type="checkbox" id="yes" name="yes" value=1>
-                <label for="yes"> yes</label> </br>
-                <input type="checkbox" id="no" name="no" value=0>
-                <label for="no"> no</label>
-              </td>
-              <td>
-                    <select name="programs" id="programs">
-                        <option value="tutoring">Tutoring</option>
-                        <option value="training">Training</option>
-                        <option value="meeting">Meeting</option>
-                        <option value="class.observation">Class Observation</option>
-                    </select>
-              </td>
-              <td>
-                <select name="sites" id="sites">
-                    <option value="Meadows">Meadows</option>
-                    <option value="Stonegate">Stonegate</option>
-                    <option value="Santee">Santee</option>
-                    <option value="Ramblewood">Ramblewood</option>
-                </select>
-              </td>
-              <td>
-                <input type="time" id="timestart" name="timestart">
-              </td>
-              <td>
-                <input type="time" id="timeend" name="timeend">
-              </td>
-              <td>
-                <input type="text" id="tutornotes" name="tutornotes"><br>
-              </td>
-            </tr>
-            <tr>
-                <td>
-                   <select name="programs" id="programs">
-                      <option value="franklin.mckinley">Franklin-Mckinley</option>
-                      <option value="san.mateo">San Mateo</option>
-                      <option value="palo.alto">Palo Alto</option>
-                      <option value="fremont">Fremont</option>
-                   </select>
-                </td>
-                <td>
-                      <select name="tutors" id="tutors">
-                          <option value="Elysse">Elysse</option>
-                          <option value="Ava">Ava</option>
-                          <option value="Sophia">Sophia</option>
-                          <option value="Isabella">Isabella</option>
-                      </select>
-                </td>
-                <td>
-                      <input type="date" id="task date" name="task date">
-                </td>
-                <td>
-                  <input type="checkbox" id="yes" name="yes" value=1>
-                  <label for="yes"> yes</label> </br>
-                  <input type="checkbox" id="no" name="no" value=0>
-                  <label for="no"> no</label>
-                </td>
-                <td>
-                      <select name="programs" id="programs">
-                          <option value="tutoring">Tutoring</option>
-                          <option value="training">Training</option>
-                          <option value="meeting">Meeting</option>
-                          <option value="class.observation">Class Observation</option>
-                      </select>
-                </td>
-                <td>
-                  <select name="sites" id="sites">
-                      <option value="Meadows">Meadows</option>
-                      <option value="Stonegate">Stonegate</option>
-                      <option value="Santee">Santee</option>
-                      <option value="Ramblewood">Ramblewood</option>
-                  </select>
-                </td>
-                <td>
-                  <input type="time" id="timestart" name="timestart">
-                </td>
-                <td>
-                  <input type="time" id="timeend" name="timeend">
-                </td>
-                <td>
-                  <input type="text" id="tutornotes" name="tutornotes"><br>
-                </td>
-              </tr>        <tr>
-                <td>
-                   <select name="programs" id="programs">
-                      <option value="franklin.mckinley">Franklin-Mckinley</option>
-                      <option value="san.mateo">San Mateo</option>
-                      <option value="palo.alto">Palo Alto</option>
-                      <option value="fremont">Fremont</option>
-                   </select>
-                </td>
-                <td>
-                      <select name="tutors" id="tutors">
-                          <option value="Elysse">Elysse</option>
-                          <option value="Ava">Ava</option>
-                          <option value="Sophia">Sophia</option>
-                          <option value="Isabella">Isabella</option>
-                      </select>
-                </td>
-                <td>
-                      <input type="date" id="task date" name="task date">
-                </td>
-                <td>
-                  <input type="checkbox" id="yes" name="yes" value=1>
-                  <label for="yes"> yes</label> </br>
-                  <input type="checkbox" id="no" name="no" value=0>
-                  <label for="no"> no</label>
-                </td>
-                <td>
-                      <select name="programs" id="programs">
-                          <option value="tutoring">Tutoring</option>
-                          <option value="training">Training</option>
-                          <option value="meeting">Meeting</option>
-                          <option value="class.observation">Class Observation</option>
-                      </select>
-                </td>
-                <td>
-                  <select name="sites" id="sites">
-                      <option value="Meadows">Meadows</option>
-                      <option value="Stonegate">Stonegate</option>
-                      <option value="Santee">Santee</option>
-                      <option value="Ramblewood">Ramblewood</option>
-                  </select>
-                </td>
-                <td>
-                  <input type="time" id="timestart" name="timestart">
-                </td>
-                <td>
-                  <input type="time" id="timeend" name="timeend">
-                </td>
-                <td>
-                  <input type="text" id="tutornotes" name="tutornotes"><br>
-                </td>
-              </tr>        <tr>
-                <td>
-                   <select name="programs" id="programs">
-                      <option value="franklin.mckinley">Franklin-Mckinley</option>
-                      <option value="san.mateo">San Mateo</option>
-                      <option value="palo.alto">Palo Alto</option>
-                      <option value="fremont">Fremont</option>
-                   </select>
-                </td>
-                <td>
-                      <select name="tutors" id="tutors">
-                          <option value="Elysse">Elysse</option>
-                          <option value="Ava">Ava</option>
-                          <option value="Sophia">Sophia</option>
-                          <option value="Isabella">Isabella</option>
-                      </select>
-                </td>
-                <td>
-                      <input type="date" id="task date" name="task date">
-                </td>
-                <td>
-                  <input type="checkbox" id="yes" name="yes" value=1>
-                  <label for="yes"> yes</label> </br>
-                  <input type="checkbox" id="no" name="no" value=0>
-                  <label for="no"> no</label>
-                </td>
-                <td>
-                      <select name="programs" id="programs">
-                          <option value="tutoring">Tutoring</option>
-                          <option value="training">Training</option>
-                          <option value="meeting">Meeting</option>
-                          <option value="class.observation">Class Observation</option>
-                      </select>
-                </td>
-                <td>
-                  <select name="sites" id="sites">
-                      <option value="Meadows">Meadows</option>
-                      <option value="Stonegate">Stonegate</option>
-                      <option value="Santee">Santee</option>
-                      <option value="Ramblewood">Ramblewood</option>
-                  </select>
-                </td>
-                <td>
-                  <input type="time" id="timestart" name="timestart">
-                </td>
-                <td>
-                  <input type="time" id="timeend" name="timeend">
-                </td>
-                <td>
-                  <input type="text" id="tutornotes" name="tutornotes"><br>
-                </td>
-              </tr>        <tr>
-                <td>
-                   <select name="programs" id="programs">
-                      <option value="franklin.mckinley">Franklin-Mckinley</option>
-                      <option value="san.mateo">San Mateo</option>
-                      <option value="palo.alto">Palo Alto</option>
-                      <option value="fremont">Fremont</option>
-                   </select>
-                </td>
-                <td>
-                      <select name="tutors" id="tutors">
-                          <option value="Elysse">Elysse</option>
-                          <option value="Ava">Ava</option>
-                          <option value="Sophia">Sophia</option>
-                          <option value="Isabella">Isabella</option>
-                      </select>
-                </td>
-                <td>
-                      <input type="date" id="task date" name="task date">
-                </td>
-                <td>
-                  <input type="checkbox" id="yes" name="yes" value=1>
-                  <label for="yes"> yes</label> </br>
-                  <input type="checkbox" id="no" name="no" value=0>
-                  <label for="no"> no</label>
-                </td>
-                <td>
-                      <select name="programs" id="programs">
-                          <option value="tutoring">Tutoring</option>
-                          <option value="training">Training</option>
-                          <option value="meeting">Meeting</option>
-                          <option value="class.observation">Class Observation</option>
-                      </select>
-                </td>
-                <td>
-                  <select name="sites" id="sites">
-                      <option value="Meadows">Meadows</option>
-                      <option value="Stonegate">Stonegate</option>
-                      <option value="Santee">Santee</option>
-                      <option value="Ramblewood">Ramblewood</option>
-                  </select>
-                </td>
-                <td>
-                  <input type="time" id="timestart" name="timestart">
-                </td>
-                <td>
-                  <input type="time" id="timeend" name="timeend">
-                </td>
-                <td>
-                  <input type="text" id="tutornotes" name="tutornotes"><br>
-                </td>
-              </tr>
-            <tr>
-              <td>
-                <button type="button" form="my_form">submit</button>
-                </td>
-            </tr>
-										</table>
-										</div>
-        </p>  
 </body>
 </html>
