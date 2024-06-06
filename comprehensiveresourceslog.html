@@ -88,10 +88,9 @@
   <tr>
     <th>Report</th>
     <th>Program</th>
-    <th>Tutor Name</th>
+    <th>Name</th>
     <th>Date</th>
-    <th>Typical Day</th>
-    <th>Task</th>
+    <th>Purpose</th>
     <th>Site</th>
     <th>Time Start</th>
     <th>Time End</th>
@@ -119,7 +118,7 @@
        </select>
     </td>
     <td>
-          <select name="tutors" id="tutors">
+          <select name="name" id="name">
               <option value="Elysse">Elysse</option>
               <option value="Ava">Ava</option>
               <option value="Sophia">Sophia</option>
@@ -130,14 +129,8 @@
           <input type="date" id="task date" name="task date">
     </td>
     <td>
-      <input type="checkbox" id="yes" name="yes" value=1>
-      <label for="yes"> yes</label>
-      <input type="checkbox" id="no" name="no" value=0>
-      <label for="no"> no</label>
-    </td>
-    <td>
-          <select name="programs" id="programs">
-              <option value="tutoring">Tutoring</option>
+          <select name="purpose" id="purpose">
+              <option value="facility">Tutoring</option>
               <option value="training">Training</option>
               <option value="meeting">Meeting</option>
               <option value="class.observation">Class Observation</option>
@@ -160,10 +153,29 @@
 	<td>
       <input type="time" id="t.time" name="totaltime">
     </td>
+				   <td>
+       <select name="rate" id="rate">
+          <option value="20">20</option>
+	  <option value="30">30</option>
+	  <option value="40">40</option>
+	  <option value="50">50</option>
+       </select>
+    </td>
+				 <td>
+      <input type="text" id="mvalue" name="value"><br>
+    </td>
     <td>
       <input type="text" id="tutornotes" name="tutornotes"><br>
     </td>
  <td>
+		   <td>
+       <select name="room size" id="room size">
+          <option value="small">Small</option>
+	  <option value="medium">Medium</option>
+	  <option value="large">Large</option>
+	  <option value="x-largre">Extra Large</option>
+       </select>
+    </td>
 	<label for="i-source">Source of Information:</label>
                 <select name="i-source">
                     <option>Elysse</option>
@@ -224,14 +236,6 @@
    <td>
      <input type="time" id="totaltime" name="t.time">
    </td>
-   <td>
-       <select name="room size" id="room size">
-          <option value="small">Small</option>
-	  <option value="medium">Medium</option>
-	  <option value="large">Large</option>
-	  <option value="x-largre">Extra Large</option>
-       </select>
-    </td>
    <td>
      <input type="text" id="tutornotes" name="tutornotes"><br>
    </td>
