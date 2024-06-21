@@ -1,0 +1,84 @@
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eclectic Siya</title>
+	<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: rgb(112, 156, 203); font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 30px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 16px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: rgb(221, 186, 162); margin-left: 20px; border-radius: 10px; padding: 7px; width: 70px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Eclectic Siya</a> </div>
+			<ul>
+				<li><a href="#">Blog</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Wingman</a></li>
+                <li><a href="#">Resources</a></li>
+
+				<button><a href="#">Sign In</a></button>
+				<button><a href="#">Sign Out</a></button>
+			</ul>
+		</div>
+	</nav>
+    <style>
+        .tutorial {
+           width: 20em;
+           border: 3px solid #3159de;
+           box-shadow: 9px 6px 4px #512c6f;
+           padding: 7px 11px;
+           background-image: linear-gradient(150deg, #EAFAF1 , #E8DAEF 30%,#E5E8E8 );
+           top and left correspond to the top-left corner of your box. What you're trying to do is have them correspond to the center. So if you set margin-top and margin-left to negative of one-half the height and width respectively, you'll get a centered box.
+
+
+            width: 1000px;
+            height: 2000px;
+            top: 50%;
+            left: 50%;
+            margin-left: 200px;
+            margin-top: 200px;
+       }
+     </style>
+     <div class="tutorial">
+        <p>Chapter 1 <br/>
+            “Who do you think would make a better ‘wing-person’, a woman or a man,” Marisol says as I warily merge into the left lane. <br/>
+
+“A woman, 100%, but wait where is this coming from, ” I say as I try to make another horrid merge onto the Bay Bridge. <br/>
+
+Sol, as I affectionately refer to my best friend of over a decade, goes onto explain a bet she has made with her new(-ish) boyfriend. I’m still very much adjusting to the idea of my wild, child best friend having a partner, but I’m very much trying to welcome him into our lives. Naz has been able to provide the gentle, loving presence that I always hoped Sol would find. She’s opened up to him to the extent that everyone finally sees the bright and deeply loving person I’ve know since I was 12. So if it means listening to her trivial, drunken night bets with her finance bro boyfriend and his friends, then so be it. 
+
+Naz is apparently trying to set-up his college best friend post a horrendous break up. All my brain can process is *something*, *something*, “the ex sent messages at 2am to his friend”, “he quit his job to move across the world for her”, “now he has blonde hair.” It’s really all my tired brain can process. I go on to tell her all about my best wingwoman tips because up until recently, I was the Queen of all things love and happy endings. <br/>
+
+A break up with the love of your life will do that to you. Well, at least, I thought he was the love of my life. Recently, I have been doing everything in my power to keep it together. Everyone, from Sol to even my sweet halmeoni* has been keeping a close eye on me. The last time Minjun and I had broken up, my whole world was turned upside down. I had almost quit school, I didn’t talk to anyone for months, and I had even considered becoming a Buddhist nun. Yes, we all still laugh at that last part. I would not have survived a month without all of my favorite foods. This time around, I’m at least trying to keep it together on the outside. I could already see Sol’s concern at my puffy eyes when we loaded our luggage into the back of my car this morning. Did I sob my eyes out for 2 hours last night because I found the handwritten list of restaurants Minjun made for what should have been our whirlwind international summer trip? Yes, yes I did. Was I going to tell my darling best friend after she bailed on her new boyfriend and their first Italy trip just so she could take the place of my shitty ex on this trip? Not at all.         
+        </p>
+     </div>
+
+</body>
+</html>
