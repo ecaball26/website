@@ -1,0 +1,12 @@
+.cardCollapsible {
+    margin-top: 20px;
+    width: auto;
+    height: 100px;
+    display: table;
+}
+
+.paragraphStyling {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
