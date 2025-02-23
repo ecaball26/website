@@ -19,7 +19,7 @@ body {
 
 /* Styles for each card */
 .card {
-    background-color: white;
+    background-color: linear-gradient(150deg, #EAFAF1 , #E8DAEF 30%,#E5E8E8 );
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
