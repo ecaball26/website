@@ -26,11 +26,6 @@
             text-align: center;
         }
 
-        .image-container {
-            width: 100%;
-            height: auto;
-        }
-
         .title {
             font-size: 24px;
             font-weight: bold;
@@ -92,6 +87,13 @@
             font-size: 16px;
             margin-top: 20px;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -152,12 +154,9 @@
     ];
     const filipinoRecipes = [
         `
-        <div class="recipe-title">Kamunggay Nga Manok</div>
-        <div class="image-container">
-            <img src="https://www.hungryhuy.com/wp-content/uploads/big-chicken-tinola-bowl.jpg" alt="chicken and moringa soup">
-        </div>
-        <img src="https://www.hungryhuy.com/wp-content/uploads/big-chicken-tinola-bowl.jpg" alt="chicken and moringa soup">
-        <div class="paragraph"><p>Ingredients</p>
+        <div class="recipe-title">Kamunggay Nga Manok<img src="https://cdn.shortpixel.ai/spai2/w_1233+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/chicken-tinola-bowl.jpg" alt="Chicken and Moringa Soup"></div>
+        <div class="paragraph">
+            <h3>Ingredients</h3>
             <ul>
                 <li>Chicken Thighs with Bone-In</li>
                 <li>Kamunggay</li>
@@ -181,8 +180,26 @@
         `,
         `
         <div class="recipe-title">Green Beans and Beef</div>
-        <div class="paragraph"><p>Ingredients</p></div>
-        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Ingredients</p>
+             <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+            </div>
+        <div class="paragraph"><p>Instructions</p>
+             <ol>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ol>
+        </div>
         <div class="paragraph"><p>Notes</p></div>
         <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
