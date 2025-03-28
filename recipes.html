@@ -104,11 +104,14 @@
     <div id="categorySection" style="display:none;">
         <label for="cuisineCategory">What kind of cuisine are you craving?</label><br>
         <select id="cuisineCategory">
+            <option value="colombian">Colombian</option>
             <option value="filipino">Filipino</option>
+            <option value="korean">Korean</option>
             <option value="japanese">Japanese</option>
             <option value="vietnamese">Vietnamese</option>
             <option value="mexican">Mexican</option>
             <option value="thai">Thai</option>
+            <option value="randofusion">Random Fusion</option>
         </select><br>
     </div>
 
@@ -126,20 +129,74 @@
 
 <script>
     // Multiple recipes for each category
+    const colombianRecipes = [
+        `
+        <div class="recipe-title">Carne Desmechada o Ropa Vieja</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">Arepas con Queso</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `
+    ];
     const filipinoRecipes = [
         `
         <div class="recipe-title">Kamunggay Nga Manok</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
         `
         <div class="recipe-title">Green Beans and Beef</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">Mang Inasal Dupe</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `
+    ];
+
+    const koreanRecipes = [
+        `
+        <div class="recipe-title">비빔밥 (beef rice bowl)</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">불고기</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">된장찌개 (fermented soybean paste stew)</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">순두부찌개 (spicy soft tofu stew)</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `
     ];
 
@@ -149,14 +206,21 @@
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
         `
         <div class="recipe-title">Japanese Curry</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">Nabe(鍋) (cabbage and beef hot pot)</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `
     ];
 
@@ -166,14 +230,14 @@
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
         `
         <div class="recipe-title">Banh Canh</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `
     ];
 
@@ -183,14 +247,14 @@
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
         `
         <div class="recipe-title">Aguachile Verde </div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `
     ];
 
@@ -200,14 +264,45 @@
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
         `
         <div class="recipe-title">Thai Basil Chicken Stir Fry - Pad Kra Pao</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
-        <div class="recipe-footer">Happy Eating, Friends!</div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `
+    ];
+
+    const randofusionRecipes = [
+        `
+        <div class="recipe-title">Pepper Lunch</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">Honey Sriracha Wings</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">Fridge Clean-Out Wonton Soup</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
+        `,
+        `
+        <div class="recipe-title">Fridge Clean-Out Veggie Stir Fry</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Amping Always - Lys ♡</div>
         `
     ];
 
@@ -231,12 +326,16 @@
 
         if (chooseCategory === "no") {
             // Random script if no category is selected
-            const allRecipes = [...filipinoRecipes, ...vietnameseRecipes, ...mexicanRecipes];
+            const allRecipes = [...colombianRecipes, ...filipinoRecipes, ...koreanRecipes, ...japaneseRecipes, ...vietnameseRecipes, ...mexicanRecipes, ...thaiRecipes, ...randofusionRecipes];
             output = allRecipes[Math.floor(Math.random() * allRecipes.length)];
         } else if (chooseCategory === "yes") {
             // Choose script based on movie category
-            if (cuisineCategory === "filipino") {
+            if (cuisineCategory === "colombian") {
+                output = colombianRecipes[Math.floor(Math.random() * colombianRecipes.length)];
+            } else if (cuisineCategory === "filipino") {
                 output = filipinoRecipes[Math.floor(Math.random() * filipinoRecipes.length)];
+            } else if (cuisineCategory === "korean") {
+                output = koreanRecipes[Math.floor(Math.random() * koreanRecipes.length)];
             } else if (cuisineCategory === "japanese") {
                 output = japaneseRecipes[Math.floor(Math.random() * japaneseRecipes.length)];
             } else if (cuisineCategory === "vietnamese") {
@@ -245,6 +344,8 @@
                 output = mexicanRecipes[Math.floor(Math.random() * mexicanRecipes.length)];
             } else if (cuisineCategory === "thai") {
                 output = thaiRecipes[Math.floor(Math.random() * thaiRecipes.length)];
+            } else if (cuisineCategory === "randofusion") {
+                output = randofusionRecipes[Math.floor(Math.random() * randofusionRecipes.length)];
             } else {
                 output = "<div class='error-message'>Error: Invalid category selected.</div>";
             }
