@@ -105,8 +105,10 @@
         <label for="cuisineCategory">What kind of cuisine are you craving?</label><br>
         <select id="cuisineCategory">
             <option value="filipino">Filipino</option>
+            <option value="japanese">Japanese</option>
             <option value="vietnamese">Vietnamese</option>
             <option value="mexican">Mexican</option>
+            <option value="thai">Thai</option>
         </select><br>
     </div>
 
@@ -126,7 +128,7 @@
     // Multiple recipes for each category
     const filipinoRecipes = [
         `
-        <div class="recipe-title">Filipino Recipe 1</div>
+        <div class="recipe-title">Kamunggay Nga Manok</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
@@ -134,6 +136,23 @@
         `,
         `
         <div class="recipe-title">Green Beans and Beef</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `
+    ];
+
+    const japaneseRecipes = [
+        `
+        <div class="recipe-title">Beef Gyudon</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `,
+        `
+        <div class="recipe-title">Japanese Curry</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
@@ -175,6 +194,23 @@
         `
     ];
 
+    const thaiRecipes = [
+        `
+        <div class="recipe-title">Red Curry</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `,
+        `
+        <div class="recipe-title">Thai Basil Chicken Stir Fry - Pad Kra Pao</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `
+    ];
+
     // Handle the 'Choose a Category' input and show/hide the category section
     document.getElementById("chooseCategory").addEventListener("change", function() {
         const chooseCategory = this.value;
@@ -201,10 +237,14 @@
             // Choose script based on movie category
             if (cuisineCategory === "filipino") {
                 output = filipinoRecipes[Math.floor(Math.random() * filipinoRecipes.length)];
+            } else if (cuisineCategory === "japanese") {
+                output = japaneseRecipes[Math.floor(Math.random() * japaneseRecipes.length)];
             } else if (cuisineCategory === "vietnamese") {
                 output = vietnameseRecipes[Math.floor(Math.random() * vietnameseRecipes.length)];
             } else if (cuisineCategory === "mexican") {
                 output = mexicanRecipes[Math.floor(Math.random() * mexicanRecipes.length)];
+            } else if (cuisineCategory === "thai") {
+                output = thaiRecipes[Math.floor(Math.random() * thaiRecipes.length)];
             } else {
                 output = "<div class='error-message'>Error: Invalid category selected.</div>";
             }
