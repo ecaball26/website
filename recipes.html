@@ -26,6 +26,11 @@
             text-align: center;
         }
 
+        .image-container {
+            width: 100%;
+            height: auto;
+        }
+
         .title {
             font-size: 24px;
             font-weight: bold;
@@ -92,10 +97,10 @@
 <body>
 
 <div class="container">
-    <div class="title">Recipe Generator</div>
+    <div class="title">Recipe Generator (AKA I want to crawl into a hole, but I still need to eat.)</div>
     
     <!-- Form for choosing category and movie type -->
-    <label for="chooseCategory">Do you appreciate your free will today?</label><br>
+    <label for="chooseCategory">Do you have any brain cells left?</label><br>
     <select id="chooseCategory">
         <option value="no">No</option>
         <option value="yes">Yes</option>
@@ -148,6 +153,9 @@
     const filipinoRecipes = [
         `
         <div class="recipe-title">Kamunggay Nga Manok</div>
+        <div class="image-container">
+            <img src="https://www.hungryhuy.com/wp-content/uploads/big-chicken-tinola-bowl.jpg" alt="chicken and moringa soup">
+        </div>
         <img src="https://www.hungryhuy.com/wp-content/uploads/big-chicken-tinola-bowl.jpg" alt="chicken and moringa soup">
         <div class="paragraph"><p>Ingredients</p>
             <ul>
