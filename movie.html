@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Script Generator</title>
+    <title>Recipe Generator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,7 +40,7 @@
             width: 80%;
         }
 
-        .script-output {
+        .recipe-output {
             font-size: 18px;
             line-height: 1.8;
             margin-top: 20px;
@@ -58,14 +58,14 @@
             margin-top: 20px;
         }
 
-        .script-output .script-title {
+        .recipe-output .recipe-title {
             font-size: 22px;
             font-weight: bold;
             color: #006699;
             margin-bottom: 15px;
         }
 
-        .script-output .paragraph {
+        .recipe-output .paragraph {
             margin-bottom: 15px;
             font-size: 16px;
         }
@@ -75,7 +75,7 @@
             padding: 0;
         }
 
-        .script-output .script-footer {
+        .recipe-output .recipe-footer {
             font-size: 14px;
             color: #777;
             margin-top: 20px;
@@ -92,86 +92,104 @@
 <body>
 
 <div class="container">
-    <div class="title">Movie Script Generator</div>
+    <div class="title">Recipe Generator</div>
     
     <!-- Form for choosing category and movie type -->
-    <label for="chooseCategory">Would you like to choose a category today?</label><br>
+    <label for="chooseCategory">Do you appreciate your free will today?</label><br>
     <select id="chooseCategory">
         <option value="no">No</option>
         <option value="yes">Yes</option>
     </select><br>
 
     <div id="categorySection" style="display:none;">
-        <label for="movieCategory">What kind of movie do you like?</label><br>
-        <select id="movieCategory">
-            <option value="romance">Romance</option>
-            <option value="horror">Horror</option>
-            <option value="comedy">Comedy</option>
+        <label for="cuisineCategory">What kind of cuisine are you craving?</label><br>
+        <select id="cuisineCategory">
+            <option value="filipino">Filipino</option>
+            <option value="vietnamese">Vietnamese</option>
+            <option value="mexican">Mexican</option>
+            <option value="thai">Thai</option>
         </select><br>
     </div>
 
-    <button onclick="generateScript()">Generate Script</button>
+    <button onclick="generateRecipe()">Generate Recipe</button>
 
     <!-- Script output display -->
-    <div id="scriptOutput" class="script-output"></div>
+    <div id="recipeOutput" class="recipe-output"></div>
 
     <!-- Buttons to accept or generate another script -->
     <div id="buttons" style="display: none;">
-        <button onclick="acceptScript()">Accept Script</button>
-        <button onclick="generateScript()">Generate Another Script</button>
+        <button onclick="acceptRecipe()">Love it!</button>
+        <button onclick="generateRecipe()">Find me another, bestie:\</button>
     </div>
 </div>
 
 <script>
-    // Multiple movie scripts for each category
-    const romanceScripts = [
+    // Multiple recipes for each category
+    const filipinoRecipes = [
         `
-        <div class="script-title">Romance Script 1</div>
-        <div class="paragraph"><p>This is the first paragraph of a romance script.</p></div>
-        <div class="paragraph"><p>This is the second paragraph of the romance script.</p></div>
-        <div class="paragraph"><p>This is the third paragraph of the romance script.</p></div>
-        <div class="script-footer">End of Romance Script 1</div>
+        <div class="recipe-title">Kamunggay Nga Manok</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
         `,
         `
-        <div class="script-title">Romance Script 2</div>
-        <div class="paragraph"><p>This is the first paragraph of another romance script.</p></div>
-        <div class="paragraph"><p>This is the second paragraph of this romance script.</p></div>
-        <div class="paragraph"><p>This is the third paragraph of the romance script.</p></div>
-        <div class="script-footer">End of Romance Script 2</div>
+        <div class="recipe-title">Green Beans and Beef</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
         `
     ];
 
-    const horrorScripts = [
+    const vietnameseRecipes = [
         `
-        <div class="script-title">Horror Script 1</div>
-        <div class="paragraph"><p>This is the first paragraph of a horror script.</p></div>
-        <div class="paragraph"><p>This is the second paragraph of the horror script.</p></div>
-        <div class="paragraph"><p>This is the third paragraph of the horror script.</p></div>
-        <div class="script-footer">End of Horror Script 1</div>
+        <div class="recipe-title">Sườn Nướng</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
         `,
         `
-        <div class="script-title">Horror Script 2</div>
-        <div class="paragraph"><p>This is the first paragraph of another horror script.</p></div>
-        <div class="paragraph"><p>This is the second paragraph of this horror script.</p></div>
-        <div class="paragraph"><p>This is the third paragraph of the horror script.</p></div>
-        <div class="script-footer">End of Horror Script 2</div>
+        <div class="recipe-title">Banh Canh</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
         `
     ];
 
-    const comedyScripts = [
+    const mexicanRecipes = [
         `
-        <div class="script-title">Comedy Script 1</div>
-        <div class="paragraph"><p>This is the first paragraph of a comedy script.</p></div>
-        <div class="paragraph"><p>This is the second paragraph of the comedy script.</p></div>
-        <div class="paragraph"><p>This is the third paragraph of the comedy script.</p></div>
-        <div class="script-footer">End of Comedy Script 1</div>
+        <div class="recipe-title">Ensalada de Pollo</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
         `,
         `
-        <div class="script-title">Comedy Script 2</div>
-        <div class="paragraph"><p>This is the first paragraph of another comedy script.</p></div>
-        <div class="paragraph"><p>This is the second paragraph of this comedy script.</p></div>
-        <div class="paragraph"><p>This is the third paragraph of the comedy script.</p></div>
-        <div class="script-footer">End of Comedy Script 2</div>
+        <div class="recipe-title">Aguachile Verde </div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `
+    ];
+
+    const thaiRecipes = [
+        `
+        <div class="recipe-title">Red Curry</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `,
+        `
+        <div class="recipe-title">Thai Basil Chicken Stir Fry - Pad Kra Pao</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
         `
     ];
 
@@ -185,39 +203,41 @@
         }
     });
 
-    let currentScript = ""; // Keep track of the currently displayed script
+    let currentRecipe = ""; // Keep track of the currently displayed script
 
     // Function to generate and display the script
-    function generateScript() {
+    function generateRecipe() {
         const chooseCategory = document.getElementById("chooseCategory").value;
-        const movieCategory = document.getElementById("movieCategory").value;
+        const cuisineCategory = document.getElementById("cuisineCategory").value;
         let output = "";
 
         if (chooseCategory === "no") {
             // Random script if no category is selected
-            const allScripts = [...romanceScripts, ...horrorScripts, ...comedyScripts];
-            output = allScripts[Math.floor(Math.random() * allScripts.length)];
+            const allRecipes = [...filipinoRecipes, ...vietnameseRecipes, ...mexicanRecipes];
+            output = allRecipes[Math.floor(Math.random() * allRecipes.length)];
         } else if (chooseCategory === "yes") {
             // Choose script based on movie category
-            if (movieCategory === "romance") {
-                output = romanceScripts[Math.floor(Math.random() * romanceScripts.length)];
-            } else if (movieCategory === "horror") {
-                output = horrorScripts[Math.floor(Math.random() * horrorScripts.length)];
-            } else if (movieCategory === "comedy") {
-                output = comedyScripts[Math.floor(Math.random() * comedyScripts.length)];
+            if (cuisineCategory === "filipino") {
+                output = filipinoRecipes[Math.floor(Math.random() * filipinoRecipes.length)];
+            } else if (cuisineCategory === "vietnamese") {
+                output = vietnameseRecipes[Math.floor(Math.random() * vietnameseRecipes.length)];
+            } else if (cuisineCategory === "mexican") {
+                output = mexicanRecipes[Math.floor(Math.random() * mexicanRecipes.length)];
+            } else if (cuisineCategory === "thai") {
+                output = thaiRecipes[Math.floor(Math.random() * thaiRecipes.length)];
             } else {
                 output = "<div class='error-message'>Error: Invalid category selected.</div>";
             }
         }
 
-        currentScript = output; // Save the current script
-        document.getElementById("scriptOutput").innerHTML = output; // Display the script
+        currentRecipe = output; // Save the current script
+        document.getElementById("recipeOutput").innerHTML = output; // Display the script
         document.getElementById("buttons").style.display = "block"; // Show the accept/generate buttons
     }
 
     // Function to accept the current script
-    function acceptScript() {
-        alert("You have accepted the script!"); // You can handle this differently if you want (e.g., saving it, etc.)
+    function acceptRecipe() {
+        alert("Yay! Happy eating, friend!"); // You can handle this differently if you want (e.g., saving it, etc.)
         document.getElementById("buttons").style.display = "none"; // Hide the buttons after accepting
     }
 </script>
