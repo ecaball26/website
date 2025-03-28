@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +17,27 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        h1 {
+            text-align: left;
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            color: #203354;
+        }
+
+        h2 {
+            text-align: left;
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            color: #d2691e;
         }
 
         .container {
@@ -82,18 +106,19 @@
             text-align: center;
         }
 
+        .recipe-subheader {
+            font-family: 'Pacifico', cursive;
+            font-size: 26px;
+            color: #d2691e; /* Chocolate color */
+            text-align: center;
+        }
+
         .error-message {
             color: red;
             font-size: 16px;
             margin-top: 20px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
     </style>
 </head>
 <body>
@@ -154,8 +179,12 @@
     ];
     const filipinoRecipes = [
         `
-        <div class="recipe-title">Kamunggay Nga Manok<img src="https://cdn.shortpixel.ai/spai2/w_1233+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/chicken-tinola-bowl.jpg" alt="Chicken and Moringa Soup"></div>
-        <div class="paragraph">
+        <div class="recipe-title">
+            
+            <h1>Kamunggay Nga Manok</h1>
+            
+            <img src="https://cdn.shortpixel.ai/spai2/w_1233+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/chicken-tinola-bowl.jpg" alt="Chicken and Moringa Soup">
+        
             <h3>Ingredients</h3>
             <ul>
                 <li>Chicken Thighs with Bone-In</li>
@@ -164,8 +193,9 @@
                 <li>Garlic</li>
                 <li>Yellow Onion</li>
             </ul>
-        </div>
-        <div class="paragraph"><p>Instructions</p>
+
+
+            <h3>Instructions</h3>
             <ol>
                 <li>Prepare Kamunggay the previous night or with friends becasuse it's a rough process. Jk girl, it just takes a while.</li>
                 <li>Chop the garlic, onion, and ginger.</li>
@@ -174,8 +204,11 @@
                 <li>Add 6 cups of water and allow the broth to simmer for 30 minutes.</li>
                 <li>Add the kammnggay and serve after 2 minutes.</li>
             </ol>
+        
+        
+            <h3>Notes</h3>
+            
         </div>
-        <div class="paragraph"><p>Notes</p></div>
         <div class="recipe-footer">Amping Always - Lys ♡</div>
         `,
         `
