@@ -104,7 +104,9 @@
     <div id="categorySection" style="display:none;">
         <label for="cuisineCategory">What kind of cuisine are you craving?</label><br>
         <select id="cuisineCategory">
+            <option value="colombian">Colombian</option>
             <option value="filipino">Filipino</option>
+            <option value="japanese">Japanese</option>
             <option value="vietnamese">Vietnamese</option>
             <option value="mexican">Mexican</option>
             <option value="thai">Thai</option>
@@ -125,6 +127,22 @@
 
 <script>
     // Multiple recipes for each category
+    const colombianRecipes = [
+        `
+        <div class="recipe-title">Carne Desmechada o Ropa Vieja</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `,
+        `
+        <div class="recipe-title">Arepas con Queso</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `
+    ];
     const filipinoRecipes = [
         `
         <div class="recipe-title">Kamunggay Nga Manok</div>
@@ -135,6 +153,23 @@
         `,
         `
         <div class="recipe-title">Green Beans and Beef</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `
+    ];
+
+    const japaneseRecipes = [
+        `
+        <div class="recipe-title">Beef Gyudon</div>
+        <div class="paragraph"><p>Ingredients</p></div>
+        <div class="paragraph"><p>Instructions</p></div>
+        <div class="paragraph"><p>Notes</p></div>
+        <div class="recipe-footer">Happy Eating, Friends!</div>
+        `,
+        `
+        <div class="recipe-title">Japanese Curry</div>
         <div class="paragraph"><p>Ingredients</p></div>
         <div class="paragraph"><p>Instructions</p></div>
         <div class="paragraph"><p>Notes</p></div>
@@ -217,8 +252,12 @@
             output = allRecipes[Math.floor(Math.random() * allRecipes.length)];
         } else if (chooseCategory === "yes") {
             // Choose script based on movie category
-            if (cuisineCategory === "filipino") {
+            if (cuisineCategory === "colombian") {
+                output = colombianRecipes[Math.floor(Math.random() * colombianRecipes.length)];
+            } else if (cuisineCategory === "filipino") {
                 output = filipinoRecipes[Math.floor(Math.random() * filipinoRecipes.length)];
+            } else if (cuisineCategory === "japanese") {
+                output = japaneseRecipes[Math.floor(Math.random() * japaneseRecipes.length)];
             } else if (cuisineCategory === "vietnamese") {
                 output = vietnameseRecipes[Math.floor(Math.random() * vietnameseRecipes.length)];
             } else if (cuisineCategory === "mexican") {
