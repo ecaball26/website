@@ -190,7 +190,7 @@
     // Function to generate and display the script
     function generateRecipe() {
         const chooseCategory = document.getElementById("chooseCategory").value;
-        const recipeCategory = document.getElementById("recipeCategory").value;
+        const cuisineCategory = document.getElementById("cuisineCategory").value;
         let output = "";
 
         if (chooseCategory === "no") {
@@ -204,7 +204,7 @@
             } else if (cuisineCategory === "vietnamese") {
                 output = vietnameseRecipes[Math.floor(Math.random() * vietnameseRecipes.length)];
             } else if (cuisineCategory === "mexican") {
-                output = cuisineCategory[Math.floor(Math.random() * mexicanRecipes.length)];
+                output = mexicanRecipes[Math.floor(Math.random() * mexicanRecipes.length)];
             } else {
                 output = "<div class='error-message'>Error: Invalid category selected.</div>";
             }
