@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+
+        select, button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+
+        .recipe-output {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">Recipe Generator</div>
+    
+    <!-- Form for choosing category and movie type -->
+    <label for="chooseCategory">Would you like to choose a category today?</label><br>
+    <select id="chooseCategory">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+    </select><br>
+
+    <div id="categorySection" style="display:none;">
+        <label for="cuisineCategory">What kind of movie do you like?</label><br>
+        <select id="cuisineCategory">
+            <option value="asian">Asian</option>
+            <option value="american">American</option>
+            <option value="european">European</option>
+        </select><br>
+    </div>
+
+    <button onclick="generateRecipe()">Generate Recipe</button>
+
+    <div id="recipeOutput" class="recipe-output"></div>
+</div>
+
+<script>
+    // Recipes
+    const recipe1 = "Recipe 1\n\nThis is the first paragraph.\n\nThis is the second paragraph.\n\nThis is the third paragraph.";
+    const recipe2 = "Recipe 2\n\nThis is the first paragraph.\n\nThis is the second paragraph.\n\nThis is the third paragraph.";
+    const recipe3 = "Recipe 3\n\nThis is the first paragraph.\n\nThis is the second paragraph.\n\nThis is the third paragraph.";
+
+    // Handle the 'Choose a Category' input and show/hide the category section
+    document.getElementById("chooseCategory").addEventListener("change", function() {
+        const chooseCategory = this.value;
+        if (chooseCategory === "yes") {
+            document.getElementById("categorySection").style.display = "block";
+        } else {
+            document.getElementById("categorySection").style.display = "none";
+        }
+    });
+
+    // Function to generate and display the recipes
+    function generateRecipe() {
+        const chooseCategory = document.getElementById("chooseCategory").value;
+        const cuisineCategory = document.getElementById("cuisineCategory").value;
+        let output = "";
+
+        if (chooseCategory === "no") {
+            // Random recipe if no category is selected
+            const recipes = [recipe1, recipe2, recipe3];
+            output = recipes[Math.floor(Math.random() * recipes.length)];
+        } else if (chooseCategory === "yes") {
+            // Choose recipe based on movie category
+            if (cuisineCategory === "asian") {
+                output = recipe1;
+            } else if (cuisineCategory === "american") {
+                output = recipe2;
+            } else if (cuisineCategory === "european") {
+                output = recipe3;
+            } else {
+                output = "Error: Invalid category.";
+            }
+        }
+
+        // Display the output recipe
+        document.getElementById("recipeOutput").textContent = output;
+    }
+</script>
+
+</body>
+</html>
