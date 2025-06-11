@@ -26,7 +26,6 @@ body, ul {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* optional: improves readability */
 }
 
 .nav-links {
@@ -45,7 +44,7 @@ body, ul {
 
 .nav-links a {
     text-decoration: none;
-    color: white; /* matches site-name */
+    color: black; /* matches site-name */
     font-size: 18px;
 }
 
@@ -64,7 +63,14 @@ body, ul {
     background-image: var(--card-gradient);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    text-align: center;
+    text-align: left;
+}
+
+.card p,
+.card li,
+.card div {
+  text-indent: 1em;         /* Indent the first line of text */
+  margin-bottom: 0.5rem;    /* Optional: space between paragraphs/elements */
 }
 
 /* RESPONSIVE DESIGN */
