@@ -44,7 +44,7 @@ body, ul {
 
 .nav-links a {
     text-decoration: none;
-    color: white; /* matches site-name */
+    color: black; /* matches site-name */
     font-size: 18px;
 }
 
