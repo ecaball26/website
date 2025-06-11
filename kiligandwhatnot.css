@@ -1,125 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --creamy-white: #fdf6e3;
+    --navbar-bg: rgb(112, 156, 203);
+    --card-gradient: linear-gradient(150deg, #EAFAF1, #E8DAEF 30%, #E5E8E8);
+}
+
+/* General reset */
+body, ul {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
 }
 
-/* Styles for the navigation bar */
+/* NAVIGATION BAR */
 .navbar {
-    width: 100%;
-    background-color: rgb(112, 156, 203);
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.navbar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* optional: limits content width */
-    margin: 0 auto;
-    width: 100%;
+    padding: 1rem 2rem;
+    background-color: var(--navbar-bg); /* ← your requested color */
+    flex-wrap: wrap;
 }
 
 .site-name {
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: var(--creamy-white); /* ← creamy white text */
 }
 
 .nav-links {
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin-left: 20px;
+    gap: 1.5rem;
+    list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s;
+    color: var(--creamy-white); /* ← creamy white text */
+    font-weight: 500;
 }
 
-.nav-links a:hover {
-    background-color: #4a7ba3;
+/* CARD CONTAINER & STYLING */
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
+.card {
+    padding: 2rem;
+    border-radius: 10px;
+    background-image: var(--card-gradient); /* ← gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    .navbar-content {
+    .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .nav-links {
         flex-direction: column;
-        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
-}
-
-/* Styles for each card */
-.card {
-    background-image: linear-gradient(150deg, #EAFAF1, #E8DAEF 30%, #E5E8E8); /* updated */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    min-height: 150px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-}
-
-/* Title and Subtitle Specific Styling */
-.card h2 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.card p {
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* Responsive design for mobile devices */
-@media (max-width: 768px) {
-    .card-container {
-        justify-content: space-evenly;
-    }
-
-    .card {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .navbar a {
-        font-size: 16px;
-    }
-}
-
-/* Responsive design for larger desktop screens */
-@media (min-width: 1024px) {
-    .card {
-        width: 300px;
+    .site-name {
+        margin-bottom: 0.5rem;
     }
 }
