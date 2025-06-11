@@ -19,39 +19,56 @@ body, ul {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--navbar-bg); /* ← your requested color */
+    background-color: var(--navbar-bg);
     flex-wrap: wrap;
 }
 
 .site-name {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--creamy-white); /* ← creamy white text */
+    color: var(--creamy-white);
 }
 
 .nav-links {
     display: flex;
     gap: 1.5rem;
     list-style: none;
+    margin: 0;        /* 💡 ensures no space from default list */
+    padding: 0;       /* 💡 ensures no space from default list */
+}
+
+.nav-links li {
+    margin: 0;        /* 💡 remove unwanted spacing */
+    padding: 0;
+    background: none; /* 💡 prevents any background bleed */
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--creamy-white); /* ← creamy white text */
-    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 💡 optional subtle hover effect */
 }
 
 /* CARD CONTAINER & STYLING */
 .card-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;  /* 🔧 stacks cards vertically */
+    align-items: center;     /* centers them horizontally */
     padding: 2rem;
+    gap: 2rem;               /* optional: space between cards */
 }
 
 .card {
     padding: 2rem;
     border-radius: 10px;
-    background-image: var(--card-gradient); /* ← gradient background */
+    background-image: var(--card-gradient);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     text-align: center;
