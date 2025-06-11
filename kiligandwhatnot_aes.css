@@ -45,7 +45,7 @@ body, ul {
 .nav-links a {
     text-decoration: none;
     color: black; /* matches site-name */
-    font-size: 18px;
+    font-size: 30px;
 }
 
 /* CARD CONTAINER & STYLING */
