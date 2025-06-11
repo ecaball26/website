@@ -1,5 +1,5 @@
+
 :root {
-    --creamy-white: #fdf6e3;
     --navbar-bg: rgb(112, 156, 203);
     --card-gradient: linear-gradient(150deg, #EAFAF1, #E8DAEF 30%, #E5E8E8);
 }
@@ -26,7 +26,7 @@ body, ul {
 .site-name {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--creamy-white);
+    color: white;
 }
 
 .nav-links {
@@ -45,16 +45,8 @@ body, ul {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--creamy-white);
-    font-weight: 500;
-    background-color: transparent; /* 💡 this removes white background */
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* 💡 optional subtle hover effect */
+    color: black; /* matches site-name */
+    font-size: 18px;
 }
 
 /* CARD CONTAINER & STYLING */
@@ -72,7 +64,14 @@ body, ul {
     background-image: var(--card-gradient);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    text-align: center;
+    text-align: left;
+}
+
+.card p,
+.card li,
+.card div {
+  text-indent: 1em;         /* Indent the first line of text */
+  margin-bottom: 0.5rem;    /* Optional: space between paragraphs/elements */
 }
 
 /* RESPONSIVE DESIGN */
