@@ -60,8 +60,10 @@ body, ul {
 /* CARD CONTAINER & STYLING */
 .card-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;  /* 🔧 stacks cards vertically */
+    align-items: center;     /* centers them horizontally */
     padding: 2rem;
+    gap: 2rem;               /* optional: space between cards */
 }
 
 .card {
