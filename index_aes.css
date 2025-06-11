@@ -46,6 +46,7 @@ body, ul {
     text-decoration: none;
     color: black; /* matches site-name */
     font-size: 18px;
+    font-weight: bold;
 }
 
 /* CARD CONTAINER & STYLING */
