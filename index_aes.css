@@ -1,105 +1,76 @@
-body {
+:root {
+    --creamy-white: #fdf6e3;
+    --navbar-bg: rgb(112, 156, 203);
+    --card-gradient: linear-gradient(150deg, #EAFAF1, #E8DAEF 30%, #E5E8E8);
+}
+
+/* General reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
-/* Styles for the navigation bar */
+/* NAVIGATION BAR */
 .navbar {
-    width: 100%;
-    background-color: rgb(112, 156, 203); /* updated */
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.navbar ul {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--navbar-bg); /* ← your requested color */
+    flex-wrap: wrap;
 }
 
-.navbar li {
-    margin: 0 20px;
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--creamy-white); /* ← creamy white text */
 }
 
-.navbar a {
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s;
+    color: var(--creamy-white); /* ← creamy white text */
+    font-weight: 500;
 }
 
-.navbar a:hover {
-    background-color: #4a7ba3; /* slightly darker hover effect */
-}
-
-/* Card container to align the cards */
+/* CARD CONTAINER & STYLING */
 .card-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin-top: 60px;
+    padding: 2rem;
 }
 
-/* Styles for each card */
 .card {
-    background-image: linear-gradient(150deg, #EAFAF1, #E8DAEF 30%, #E5E8E8); /* updated */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    min-height: 150px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
+    padding: 2rem;
+    border-radius: 10px;
+    background-image: var(--card-gradient); /* ← gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
 }
 
-/* Title and Subtitle Specific Styling */
-.card h2 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.card p {
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* Responsive design for mobile devices */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    .card-container {
-        justify-content: space-evenly;
+    .navbar {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .card {
-        width: 80%;
-        margin-bottom: 20px;
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
-    .navbar a {
-        font-size: 16px;
-    }
-}
-
-/* Responsive design for larger desktop screens */
-@media (min-width: 1024px) {
-    .card {
-        width: 300px;
+    .site-name {
+        margin-bottom: 0.5rem;
     }
 }
