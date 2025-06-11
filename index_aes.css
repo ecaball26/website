@@ -1,5 +1,5 @@
 :root {
-    --creamy-white: #fdf6e3;
+    --creamy-white: #FFFFF8;
     --navbar-bg: rgb(112, 156, 203);
     --card-gradient: linear-gradient(150deg, #EAFAF1, #E8DAEF 30%, #E5E8E8);
 }
@@ -27,6 +27,7 @@ body, ul {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--creamy-white);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* optional: improves readability */
 }
 
 .nav-links {
@@ -45,15 +46,18 @@ body, ul {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: var(--creamy-white); /* matches site-name */
     font-size: 18px;
     padding: 10px 15px;
     display: block;
-    transition: background-color 0.3s;
+    border-radius: 8px;            /* separates each link visually */
+    margin: 2px 0;                 /* spacing between links */
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* 💡 optional subtle hover effect */
+    background-color: rgba(255, 255, 255, 0.15); /* light creamy hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);      /* adds depth */
 }
 
 /* CARD CONTAINER & STYLING */
