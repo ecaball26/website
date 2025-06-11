@@ -45,11 +45,10 @@ body, ul {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--creamy-white);
-    font-weight: 500;
-    background-color: transparent; /* 💡 this removes white background */
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
     transition: background-color 0.3s;
 }
 
